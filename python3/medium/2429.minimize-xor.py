@@ -9,7 +9,7 @@ class Solution:
     def minimizeXor(self, num1: int, num2: int) -> int:
         ans = num1
         i = 0
-        ans_count = ans.bit_count()
+        ans_count = ans.bit_count() # to count no. of set bits
         num2_count = num2.bit_count()
         while ans_count < num2_count:
             if not ans & (1 << i):
